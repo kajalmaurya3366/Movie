@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+ 
+/*-------------- header css --------------- */
+.header{
+    width:100%;
+    height:70px;
+    background: black;
+    padding:0% 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width:20%;
+    height:70px;
+    /* background: yellow; */
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    height:100%;
+    width:200px;
+    /* mix-blend-mode: color-burn; */
+    
+}
+.search{
+    width:30%;
+    height:70px;
+    /* background: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar{
+    width:80%;
+    height:35px;
+    background: white;  
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    border-radius: 10px;
+}
+.search-box{
+    width:80%;
+    height:35px;
+    font-size: 17px;
+    text-indent: 20px;
+    outline:none;
+    border:none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.search-icon{
+    height:28px;
+    background: white;
+    cursor: pointer;
+}
+
+/* ----------------css of main movies part ------------- */
+
+.movies{
+    width:100%;
+    padding:50px 5%;
+    background: grey;
+    display:flex;
+    flex-wrap: wrap;
+    column-gap: 5%;
+    row-gap: 50px;
+}
+.movie{
+    width:20%;
+    height:378px;
+    background: yellowgreen;
+    border-radius: 10px;
+    overflow:hidden;        
+    position:relative;
+
+
+   
+}
+.movie img{
+    width:100%;
+    height:378px;
+}
+.overlay{
+    width:100%;
+    height:100%;
+    background: black;
+    position: absolute;
+    opacity:0;
+    cursor:pointer;
+    transition: 0.7s;
+}
+.overlay:hover{
+    opacity:1;
+}
+.video{
+    width:100%;
+    height:50%;
+    /* background: yellow; */
+}
+.vedio video{
+    width:100%;
+    height:50%;
+}
+.details{
+    width:100%;
+    height:50%;
+    font-family: 'poppins';
+    /* background: blue; */
+    color:white;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.movie-poster{
+    width:100%;
+}
